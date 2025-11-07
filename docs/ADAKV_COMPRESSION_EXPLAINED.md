@@ -27,6 +27,7 @@ AdaKV first computes attention scores to determine which KV cache elements are m
 
 ```python
 # From snapkv_utils.py - AdaptiveSnapKVCluster.calcul_attn_sore()
+# Note: Function name in source has typo "sore" instead of "score"
 attn_weights = torch.matmul(query_states[..., -self.window_size:, :], 
                            key_states.transpose(2, 3)) / math.sqrt(head_dim)
 
