@@ -521,7 +521,7 @@ AdaKV represents a significant advancement in KV cache compression for LLMs:
 1. **Adaptive budget allocation** based on attention patterns, not uniform distribution
 2. **Head-wise optimization** recognizing different heads have different needs
 3. **Minimal quality degradation** while achieving substantial memory savings
-4. **Efficient implementation** using flattened storage and custom CUDA kernels
+4. **Efficient implementation** using flattened storage and custom CUDA kernels that minimize memory fragmentation, provide fast cache updates, and maintain full compatibility with flash attention's optimized kernels
 5. **Flexible configuration** supporting various models and use cases
 
 The key innovation is recognizing that **efficient ≠ uniform**: by allocating resources where they provide the most value, AdaKV achieves better performance than naive uniform compression approaches.
