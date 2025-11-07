@@ -34,6 +34,16 @@ Many cutting-edge methods have integrated the Adaptive Budget Allocation of AdaK
 * Draft-based Approximate Inference for LLMs [paper](https://arxiv.org/pdf/2506.08373), [code](https://github.com/furiosa-ai/draft-based-approx-llm)
 
 
+## Documentation
+
+📖 **[Technical Deep Dive: AdaKV Compression Explained](./docs/ADAKV_COMPRESSION_EXPLAINED.md)**
+
+For a comprehensive understanding of how AdaKV performs KV cache compression, including:
+- Detailed explanation of the compression mechanism
+- Comparison with original attention processing
+- Key advantages and performance benefits
+- Implementation details and code examples
+
 ## Usage of this Repo
 
 ### Requirements
